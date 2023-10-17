@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+</head>
+<body>
+    <navbar class="horizontal-navbar">
+        <ul>
+            <li><a href="#">Languages</a>
+                <ul>
+                    <li><a href="#">Front</a>
+                        <ul>
+                            <li><a href="#">HTML</a></li>
+                            <li><a href="#">CSS</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">PHP</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Browsers</a>
+                <ul>
+                    <li><a href="#">Chrome</a></li>
+                    <li><a href="#">Opera</a></li>
+                    <li><a href="#">IE</a></li>
+                    <li><a href="#">Firefox</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Others</a>
+            </li>
+        </ul>
+    </navbar>
+
+    <navbar class="vertical-navbar">
+        <ul>
+            <li><a href="#">Один</a>
+                <ul>
+                    <li><a href="#">1.1</a></li>
+                    <li><a href="#">1.2</a></li>
+                    <li><a href="#">1.3</a></li>
+                    <li><a href="#">1.4</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Два</a></li>
+            <li><a href="#">Три</a></li>
+        </ul>
+    </navbar>
+
+    <div class="ad">
+        <button id="closeAdButton">
+            <span>&times;</span>
+        </button>
+        <img class="ad-picture" src="images/ad.png"
+        alt="typical ad"/>
+    </div>
+</body>
+
+<script>
+    const closeAdButton = document.getElementById('closeAdButton');
+    const adDiv = document.querySelector('.ad');
+
+    closeAdButton.addEventListener('click', function() {
+        adDiv.style.display = 'none';
+    });
+</script>
+</html>
